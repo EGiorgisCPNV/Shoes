@@ -18,20 +18,25 @@ if (isset($_GET['action'])) {
         case 'displayArticles' :
             displayArticles();
             break;
+
         case 'home' :
             home();
             break;
+
         case 'login' :
             login($_POST);
             break;
+
         case 'logout' :
             logout();
             break;
+
         case 'register' :
             register($_POST);
             break;
+
         default :
-            lost();
+            home();
     }
 } else {
     home();

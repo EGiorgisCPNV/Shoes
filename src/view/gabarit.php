@@ -1,274 +1,201 @@
-<?php
-/**
- * @file      gabarit.php
- * @brief     This view is designed to centralize all common graphical component like header and footer (will be call by all views)
- * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
- */
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
-?>
-<!DOCTYPE HTML>
-<html>
 <head>
-    <meta charset="utf-8">
-    <title><?= $title; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
     <meta name="description" content="">
-    <meta name="author" content="Html5TemplatesDreamweaver.com">
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> <!-- Remove this Robots Meta Tag, to allow indexing of site -->
-
-    <link href="view/content/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="view/content/scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Icons -->
-    <link href="view/content/scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet"
-          type="text/css"/>
-    <link href="view/content/scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet"
-          type="text/css"/>
-    <!--[if lt IE 8]>
-    <link href="view/content/scripts/icons/general/stylesheets/general_foundicons_ie7.css" media="screen"
-          rel="stylesheet"
-          type="text/css"/>
-    <link href="view/content/scripts/icons/social/stylesheets/social_foundicons_ie7.css" media="screen" rel="stylesheet"
-          type="text/css"/>
-    <![endif]-->
-    <link rel="stylesheet" href="view/content/scripts/fontawesome/css/font-awesome.min.css">
-    <!--[if IE 7]>
-    <link rel="stylesheet" href="view/content/scripts/fontawesome/css/font-awesome-ie7.min.css">
-    <![endif]-->
-
-    <link href="view/content/scripts/carousel/style.css" rel="stylesheet" type="text/css"/>
-    <link href="view/content/scripts/camera/css/camera.css" rel="stylesheet" type="text/css"/>
-
-    <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
-
-    <link href="view/content/styles/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Karma Shop</title>
+    <!--
+        CSS
+        ============================================= -->
+    <link rel="stylesheet" href="view/cssNewTemplate/linearicons.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/font-awesome.min.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/themify-icons.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/bootstrap.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/owl.carousel.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/nice-select.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/nouislider.min.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/ion.rangeSlider.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/magnific-popup.css">
+    <link rel="stylesheet" href="view/cssNewTemplate/main.css">
 </head>
-<body id="pageBody">
 
-<div id="divBoxed" class="container">
+<body>
 
-    <div class="transparent-bg"
-         style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+<!-- Start Header Area -->
+<header class="header_area sticky-header">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light main_box">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="index.php?action=home"><img src="view/img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
 
-    <div class="divPanel notop nobottom">
-        <div class="row-fluid">
-            <div class="span12">
-                <div id="divLogo" class="pull-left">
-                    <a href="index.php" id="divSiteTitle">Rent A Snow</a><br/>
-                    <a href="index.php" id="divTagLine">La glisse à moindre coût</a>
-                </div>
-                <div id="divMenuRight" class="pull-right">
-                    <div class="navbar">
-                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary"
-                                data-toggle="collapse" data-target=".nav-collapse">
-                            NAVIGATION <span class="icon-chevron-down icon-white"></span>
-                        </button>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav nav-pills ddmenu">
-                                <!-- Display the button which must be always (available for all type of users)-->
-                                <li><a href="index.php?action=home">Accueil</a></li>
-                                <li><a href="index.php?action=displayArticles">Snows</a></li>
-                                <!-- Display the button useful for login and register-->
-                                <?php if (!isset($_SESSION['userEmailAddress']) || (!isset($_GET['action'])) || ((@$_GET['action'] == "logout"))) : ?>
-                                    <li><a href="index.php?action=login">Login</a></li>
-                                    <li><a href="index.php?action=register" style="color:#FC05CB">S'inscrire</a></li>
-                                <?php else : ?>
-                                    <!-- Display the button useful for logout-->
-                                    <li><a href="index.php?action=logout">Se déconnecter</a></li>
-                                <?php endif; ?>
-                            </ul>
-                            <!-- after login, we display the user name-->
-                            <?php if (isset($_SESSION['userEmailAddress'])) : ?>
-                                <h6>Vous êtes connecté : <?= $_SESSION['userEmailAddress']; ?></h6>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <!-- boutton accuiel-->
+                        <li class="nav-item active" <?php if ((@$_GET['action'] == "home") || (!isset($_GET['action'])))  : //les double points sont obligatoire sa remplace un "{" dans les fichier html?>
+                        <?php endif ?>>
+                            <a class="nav-link" href="index.php?action=home">Accueil</a></li>
 
-        <div class="row-fluid">
-            <div class="span12">
-                <!-- ________ SLIDER_____________-->
-                <?php if ((@$_GET['action'] == "home") || (!isset($_GET['action']))) : ?>
-                    <div id="headerSeparator"></div>
-                    <div class="camera_full_width">
-                        <div id="camera_wrap">
-                            <div data-src="view/content/slider-images/5.jpg">
-                                <div class="camera_caption fadeFromBottom cap1">Les derniers modèles toujours à
-                                    disposition.
-                                </div>
-                            </div>
-                            <div data-src="view/content/slider-images/1.jpg">
-                                <div class="camera_caption fadeFromBottom cap2">Découvrez des paysages fabuleux avec des
-                                    sensations.
-                                </div>
-                            </div>
-                            <div data-src="view/content/slider-images/2.jpg"></div>
-                        </div>
-                        <br style="clear:both"/>
-                        <div style="margin-bottom:40px"></div>
-                    </div>
-                    <div id="headerSeparator2"></div>
-                    <!-- ________ SLIDER_____________-->
-                <?php endif; ?>
-            </div>
-        </div>
 
-        <div class="contentArea">
+                        <!-- boutton produit-->
+                        <li class="nav-item active" <?php if ((@$_GET['action'] == "displayArticles"))  : ?>
+                            class="active"
+                        <?php endif ?>>
+                            <a class="nav-link" href="index.php?action=displayArticles" >Produit</a></li>
 
-            <div class="divPanel notop page-content">
-                <div class="row-fluid">
 
-                    <!--__________CONTENU__________-->
 
-                    <div class="span12" id="divMain">
-                        <?= $content; ?>
-                    </div>
-
-                    <!--________FIN CONTENU________-->
-
-                </div>
-
-                <div id="footerInnerSeparator"></div>
-            </div>
-        </div>
-
-        <div id="footerOuterSeparator"></div>
-
-        <div id="divFooter" class="footerArea">
-            <div class="divPanel">
-                <div class="row-fluid">
-                    <div class="span3" id="footerArea1">
-                        <h3>Notre magasin</h3>
-                        <p>Nous sommes une équipe de jeunes snowboardeurs qui souhaitons faire découvrir cette
-                            discipline à tous les publics.</p>
-                        <p>
-                            <a href="#" title="Terms of Use">Terms of Use</a><br/>
-                            <a href="#" title="Privacy Policy">Privacy Policy</a><br/>
-                            <a href="#" title="FAQ">FAQ</a><br/>
-                            <a href="#" title="Sitemap">Sitemap</a>
-                        </p>
-                    </div>
-
-                    <div class="span3" id="footerArea2">
-                        <h3>Dernière nouveautés</h3>
-                        <p>
-                            <a href="#" title="">Le Burton B221 est à disposition</a><br/>
-                            <span style="text-transform:none;">15/05/2019</span>
-                        </p>
-                        <p>
-                            <a href="#" title="">Les horaires ont été étendus</a><br/>
-                            <span style="text-transform:none;">02/01/2019</span>
-                        </p>
-                        <p>
-                            <a href="#" title="">Paul champion suisse !</a><br/>
-                            <span style="text-transform:none;">19/03/2019</span>
-                        </p>
-                        <p>
-                            <a href="#" title="">VIEW ALL POSTS</a>
-                        </p>
-                    </div>
-
-                    <div class="span3" id="footerArea3">
-                        <h3>Horaires de location</h3>
-                        <p>Les locations peuvent s'effectuer tous les jours de la semaine en haute saison de 07h à 19h
-                            et en basse saison, les jours ouvrables de 8h à 18h.<br>
-                            Vous pouvez aussi passer par le site. Pour le retrait et le dépot, vous devrez passer au
-                            guichet automatique à l'arrière du magasin</p>
-                    </div>
-
-                    <div class="span3" id="footerArea4">
-                        <h3>Contacts</h3>
-
-                        <ul id="contact-info">
-                            <li>
-                                <i class="general foundicon-phone icon"></i>
-                                <span class="field">Téléphone :</span>
-                                <br/>
-                                +41 27 890 12 34
-                            </li>
-                            <li>
-                                <i class="general foundicon-mail icon"></i>
-                                <span class="field">Email :</span>
-                                <br/>
-                                <a href="mailto:info@rentasnow.com" title="Email">info@rentasnow.com</a>
-                            </li>
-                            <li>
-                                <i class="general foundicon-home icon" style="margin-bottom:50px"></i>
-                                <span class="field">Addresse :</span>
-                                <br/>
-                                12 Rue de la Glisse<br/>
-                                2704 Sautons, Valais<br/>
-                                Suisse
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <br/><br/>
-
-                <div class="row-fluid">
-                    <div class="span12">
-                        <p class="copyright">Copyright © 2019 Rent A Snow. All Rights Reserved.</p>
-                        <p class="social_bookmarks">
-                            <a href="#"><i class="social foundicon-facebook"></i> Facebook</a>
-                            <a href=""><i class="social foundicon-twitter"></i> Twitter</a>
-                            <a href="#"><i class="social foundicon-pinterest"></i> Pinterest</a>
-                            <a href="#"><i class="social foundicon-rss"></i> Rss</a>
-                        </p>
-                    </div>
+                        <?php if (!isset($_SESSION['userEmailAddress']) || (!isset($_GET['action'])) || ((@$_GET['action'] == "logout"))) : ?>
+                            <li class="nav-item active"><a class="nav-link" href="index.php?action=login">Login</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.php?action=register" >S'inscrire</a></li>
+                        <?php else : ?>
+                            <!-- Display the button useful for logout-->
+                            <li class="nav-item active"><a class="nav-link"><a href="index.php?action=logout">Se déconnecter</a></li>
+                        <?php endif; ?>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
+                        <li class="nav-item">
+                            <button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </div>
+    <div class="search_input" id="search_input_box">
+        <div class="container">
+            <form class="d-flex justify-content-between">
+                <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                <button type="submit" class="btn"></button>
+                <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+            </form>
         </div>
     </div>
-    <br/><br/><br/>
+</header>
+<!-- End Header Area -->
 
-    <script src="view/content/scripts/jquery.min.js" type="text/javascript"></script>
-    <script src="view/content/scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="view/content/scripts/default.js" type="text/javascript"></script>
+<div class="row-fluid">
+    <!--Edit Main Content Area here-->
+    <?= $content; ?>
+    <!--End Main Content-->
+</div>
+
+        <!-- start footer Area -->
+        <footer class="footer-area section_gap">
+            <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>About Us</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>Newsletter</h6>
+                    <p>Stay update with our latest</p>
+                    <div class="" id="mc_embed_signup">
+
+                        <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                              method="get" class="form-inline">
+
+                            <div class="d-flex flex-row">
+
+                                <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                       required="" type="email">
 
 
-    <script src="view/content/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
-    <script type="text/javascript">$('#list_photos').carouFredSel({
-            responsive: true,
-            width: '100%',
-            scroll: 2,
-            items: {width: 320, visible: {min: 2, max: 6}}
-        });</script>
-    <script src="view/content/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
-    <script src="view/content/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
+                                <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                </div>
 
-    <script type="text/javascript">function startCamera() {
-            $('#camera_wrap').camera({
-                fx: 'scrollLeft',
-                time: 2000,
-                loader: 'none',
-                playPause: false,
-                navigation: true,
-                height: '35%',
-                pagination: true
-            });
-        }
+                                <!-- <div class="col-lg-4 col-md-4">
+                                            <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
+                                        </div>  -->
+                            </div>
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="single-footer-widget mail-chimp">
+                    <h6 class="mb-20">Instragram Feed</h6>
+                    <ul class="instafeed d-flex flex-wrap">
+                        <li><img src="img/i1.jpg" alt=""></li>
+                        <li><img src="img/i2.jpg" alt=""></li>
+                        <li><img src="img/i3.jpg" alt=""></li>
+                        <li><img src="img/i4.jpg" alt=""></li>
+                        <li><img src="img/i5.jpg" alt=""></li>
+                        <li><img src="img/i6.jpg" alt=""></li>
+                        <li><img src="img/i7.jpg" alt=""></li>
+                        <li><img src="img/i8.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>Follow Us</h6>
+                    <p>Let us be social</p>
+                    <div class="footer-social d-flex align-items-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+            <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
 
-        $(function () {
-            startCamera()
-        });</script>
+<script src="view/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="view/js/vendor/bootstrap.min.js"></script>
+<script src="view/js/jquery.ajaxchimp.min.jsj"></script>
+<script src="view/js/jquery.nice-select.min.js"></script>
+<script src="view/js/jquery.sticky.js"></script>
+<script src="view/js/nouislider.min.js"></script>
+<script src="view/js/countdown.js"></script>
+<script src="view/js/jquery.magnific-popup.min.js"></script>
+<script src="view/js/owl.carousel.min.js"></script>
 
-    <!-- scripts added to standard template-->
-    <script src="view/content/scripts/custo/userScript.js"></script>
-
+<!--gmaps Js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+<script src="view/js/gmaps.min.js"></script>
+<script src="view/js/main.js"></script>
 </body>
+
 </html>

@@ -12,6 +12,7 @@ require "controller/articles.php";
 require "controller/navigation.php";
 require "controller/users.php";
 
+
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
     switch ($action) {
@@ -36,7 +37,7 @@ if (isset($_GET['action'])) {
             break;
 
         default :
-            home();
+            lost();
     }
 } else {
     home();

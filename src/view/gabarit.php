@@ -61,7 +61,7 @@
                         <li class="nav-item active" <?php if ((@$_GET['action'] == "displayArticles"))  : ?>
                             class="active"
                         <?php endif ?>>
-                            <a class="nav-link" href="index.php?action=displayArticles" >Produit</a></li>
+                            <a class="nav-link" href="index.php?action=displayArticles" >Articles</a></li>
 
 
 
@@ -73,24 +73,10 @@
                             <li class="nav-item active"><a class="nav-link"><a href="index.php?action=logout">Se déconnecter</a></li>
                         <?php endif; ?>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
-                        <li class="nav-item">
-                            <button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
-                        </li>
-                    </ul>
+
                 </div>
             </div>
         </nav>
-    </div>
-    <div class="search_input" id="search_input_box">
-        <div class="container">
-            <form class="d-flex justify-content-between">
-                <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                <button type="submit" class="btn"></button>
-                <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
-            </form>
-        </div>
     </div>
 </header>
 <!-- End Header Area -->
@@ -125,7 +111,7 @@
 
                             <div class="d-flex flex-row">
 
-                                <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                <input class="form-control" name="inputUserEmailAddress" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
                                        required="" type="email">
 
 
@@ -147,14 +133,14 @@
                 <div class="single-footer-widget mail-chimp">
                     <h6 class="mb-20">Instragram Feed</h6>
                     <ul class="instafeed d-flex flex-wrap">
-                        <li><img src="img/i1.jpg" alt=""></li>
-                        <li><img src="img/i2.jpg" alt=""></li>
-                        <li><img src="img/i3.jpg" alt=""></li>
-                        <li><img src="img/i4.jpg" alt=""></li>
-                        <li><img src="img/i5.jpg" alt=""></li>
-                        <li><img src="img/i6.jpg" alt=""></li>
-                        <li><img src="img/i7.jpg" alt=""></li>
-                        <li><img src="img/i8.jpg" alt=""></li>
+                        <li><img src="view/img/i1.jpg" alt=""></li>
+                        <li><img src="view/img/i2.jpg" alt=""></li>
+                        <li><img src="view/img/i3.jpg" alt=""></li>
+                        <li><img src="view/img/i4.jpg" alt=""></li>
+                        <li><img src="view/img/i5.jpg" alt=""></li>
+                        <li><img src="view/img/i6.jpg" alt=""></li>
+                        <li><img src="view/img/i7.jpg" alt=""></li>
+                        <li><img src="view/img/i8.jpg" alt=""></li>
                     </ul>
                 </div>
             </div>

@@ -20,7 +20,6 @@ if (isset($_GET['action'])) {
             displayArticles();
             break;
 
-
         case 'singleArticles' :
             singleArticles();
             break;

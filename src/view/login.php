@@ -47,12 +47,12 @@ ob_start();
                 <div class="col-lg-6">
                     <div class="login_form_inner">
                         <h3>Log in to enter</h3>
-                        <form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="row login_form" action="index.php?action=login" method="post" id="contactForm" novalidate="novalidate">
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="userEmailAddress" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                                <input type="text" class="form-control" id="name" name="inputUserEmailAddress" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                                <input type="text" class="form-control" id="name" name="inputUserPsw" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
                             </div>
                             <div class="col-md-12 form-group">
                                 <div class="creat_account">

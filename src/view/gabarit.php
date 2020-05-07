@@ -70,7 +70,7 @@
                             <li class="nav-item active"><a class="nav-link" href="index.php?action=register" >S'inscrire</a></li>
                         <?php else : ?>
                             <!-- Display the button useful for logout-->
-                            <li class="nav-item active"><a class="nav-link"><a href="index.php?action=logout">Se déconnecter</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.php?action=logout">Se déconnecter</a></li>
                         <?php endif; ?>
                     </ul>
 

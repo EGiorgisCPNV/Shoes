@@ -23,7 +23,7 @@ function displayArticles()
 }
 
 /**
- * @brief This function is designed to display Articles
+ * @brief This function is designed to display a single article
  */
 function singleArticles()
 {

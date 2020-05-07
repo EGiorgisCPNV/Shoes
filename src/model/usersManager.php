@@ -7,6 +7,9 @@
  * @version   13-APR-2020
  */
 
+
+
+
 /**
  * @brief This function is designed to verify user's login
  * @param $userEmailAddress : must be meet RFC 5321/5322
@@ -28,6 +31,7 @@ function isLoginCorrect($userEmailAddress, $userPsw)
         $userHashPsw = $queryResult[0]['userHashPsw'];
         $result = password_verify($userPsw, $userHashPsw);
     }
+
     return $result;
 }
 

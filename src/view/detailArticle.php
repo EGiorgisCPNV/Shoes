@@ -34,17 +34,21 @@ $rows = 0; // Column count
         <div class="container">
             <div class="row s_product_inner">
                 <div class="col-lg-6">
+                    <?php foreach ($tableSingleSnow as $result) : ?>
                     <div class="s_Product_carousel">
+
                         <div class="single-prd-item">
-                            <img class="img-fluid" src="view/img/category/s-p1.jpg" alt="">
+                       <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>" >
+                        </div>
+
+                        <div class="single-prd-item">
+                            <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>" >
                         </div>
                         <div class="single-prd-item">
-                            <img class="img-fluid" src="view/img/category/s-p1.jpg" alt="">
-                        </div>
-                        <div class="single-prd-item">
-                            <img class="img-fluid" src="view/img/category/s-p1.jpg" alt="">
+                            <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>" >
                         </div>
                     </div>
+                    <?php endforeach ?>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="s_product_text">
@@ -188,7 +192,11 @@ $rows = 0; // Column count
                 </div>
 
                 <div class="tab-pane fade" id="picture" role="tabpanel" aria-labelledby="home-tab">
-                    <img class="img-fluid" src="view/img/category/s-p1.jpg" style="width: 200%" alt="">
+                    <?php foreach ($tableSingleSnow as $result) : ?>
+                        <div class="single-prd-item">
+                                <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>" >
+                        </div>
+                    <?php endforeach ?>
                 </div>
 
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">

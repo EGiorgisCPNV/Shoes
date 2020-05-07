@@ -21,7 +21,7 @@ if (isset($_GET['action'])) {
             break;
 
         case 'singleArticles' :
-            singleArticles();
+            singleArticles($_GET['code']);
             break;
 
         case 'home' :

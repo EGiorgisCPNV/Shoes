@@ -25,14 +25,17 @@ function displayArticles()
 /**
  * @brief This function is designed to display a single article
  */
-function singleArticles()
+function singleArticles($code)
 {
     require_once "model/articlesManager.php";
+
+
     try {
-        $snowsResults = getArticles();
+        $tableSingleSnow = detailSingleSnow($code);
     } catch (ModelDataBaseException $ex) {
         $articleErrorMessage = "Nous rencontrons temporairement un problème technique pour afficher nos produits. Désolé du dérangement !";
     } finally {
         require "view/detailArticle.php";
     }
+
 }

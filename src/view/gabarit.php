@@ -71,6 +71,7 @@
                         <?php else : ?>
                             <!-- Display the button useful for logout-->
                             <li class="nav-item active"><a class="nav-link" href="index.php?action=logout">Se déconnecter</a></li>
+                            <label class="nav-link" >Vous êtes connecté en tant qu'<?php echo $_SESSION['userEmailAddress'] ?></label>
                         <?php endif; ?>
                     </ul>
 

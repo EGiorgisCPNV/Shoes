@@ -18,7 +18,7 @@ function getArticles()
     //ATTENTION il va afficher les snow pcq dans DBconector la fonction openDBConnector se connect a la base snows et non shoes
 
 
-    $snowsQuery = 'SELECT code, brand, model, qtyAvailable, photo, active FROM snows'; //change le snows en shoes et aussi dans dbConnector.php
+    $snowsQuery = 'SELECT code, brand, model, qtyAvailable, photo, active FROM shoes'; //change le snows en shoes et aussi dans dbConnector.php
 
     require_once 'model/dbConnector.php';
 
@@ -48,7 +48,7 @@ function getArticles()
 function detailSingleSnow($code)
 {
 
-    $requete = "SELECT * FROM snows where code ='$code';";
+    $requete = "SELECT * FROM shoes where code ='$code';"; //a changer avec shoes pour la BD shoes
 
     require_once 'model/dbConnector.php';
 

@@ -313,10 +313,7 @@ $rows = 0; // Column count
                         <?php foreach ($snowsResults as $result) : ?>
                         <div class="col-lg-4 col-md-6">
                             <div class="single-product">
-
-                                <a href="view/content/images/<?= $result['code']; ?>_small.jpg" target="blank">
                                     <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
-                                </a>
                                 <div class="product-details">
                                     <h6>addidas New Hammer sole
                                         for Sports person</h6>

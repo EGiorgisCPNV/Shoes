@@ -57,14 +57,6 @@
                             <a class="nav-link" href="index.php?action=home">Accueil</a></li>
 
 
-                        <!-- boutton produit-->
-                        <li class="nav-item active" <?php if ((@$_GET['action'] == "displayArticles"))  : ?>
-                            class="active"
-                        <?php endif ?>>
-                            <a class="nav-link" href="index.php?action=displayArticles" >Articles</a></li>
-
-
-
                         <?php if (!isset($_SESSION['userEmailAddress']) || (!isset($_GET['action'])) || ((@$_GET['action'] == "logout"))) : ?>
                             <li class="nav-item active"><a class="nav-link" href="index.php?action=login">Login</a></li>
                             <li class="nav-item active"><a class="nav-link" href="index.php?action=register" >S'inscrire</a></li>
@@ -73,6 +65,16 @@
                             <li class="nav-item active"><a class="nav-link" href="index.php?action=logout">Se déconnecter</a></li>
                             <label class="nav-link" >Vous êtes connecté en tant qu'<?php echo $_SESSION['userEmailAddress'] ?></label>
                         <?php endif; ?>
+
+                        <!-- boutton produit-->
+                        <li class="nav-item active" <?php if ((@$_GET['action'] == "displayArticles"))  : ?>
+                            class="active"
+                        <?php endif ?>>
+                            <a class="nav-link" href="index.php?action=displayArticles" >Articles</a></li>
+
+
+
+
                     </ul>
 
                 </div>

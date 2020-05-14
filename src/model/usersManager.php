@@ -3,8 +3,8 @@
  * @file      usersManager.php
  * @brief     This model is designed to implements users business logic
  * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
+ * @author    Updated by Esteban:giorgis
+ * @version   14.05.202
  */
 
 

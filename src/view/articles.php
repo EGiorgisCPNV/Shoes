@@ -3,8 +3,8 @@
  * @file      articles.php
  * @brief     This view is designed to display articles
  * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
+ * @author    Updated by Esteban:giorgis
+ * @version   14.05.202
  */
 
 $title = "Rent A Snow - Snows";

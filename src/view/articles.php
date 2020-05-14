@@ -318,8 +318,7 @@ $rows = 0; // Column count
                                     <h6>addidas New Hammer sole
                                         for Sports person</h6>
                                     <div class="price">
-                                        <h6>$150.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6><?= $result['price']; ?>$</h6>
                                     </div>
                                     <div class="prd-bottom">
 

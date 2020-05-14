@@ -1,28 +1,28 @@
 <?php
-/**
- * @file      articlesManager.php
- * @brief     This model is designed to implement the articles business logic
- * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
- */
+    /**
+     * @file      articlesManager.php
+     * @brief     This model is designed to implement the articles business logic
+     * @author    Created by Pascal.BENZONANA
+     * @author    Updated by Nicolas.GLASSEY
+     * @version   13-APR-2020
+     */
 
-/**
- * @brief This function is designed to get all active articles
- * @return array : containing all information about the articles. Array can be empty.
- * @throws ModelDataBaseException : will be throw if something goes wrong with the database opening process
- */
-function getArticles()
-{
+    /**
+     * @brief This function is designed to get all active articles
+     * @return array : containing all information about the articles. Array can be empty.
+     * @throws ModelDataBaseException : will be throw if something goes wrong with the database opening process
+     */
+    function getArticles()
+    {
 
-    //ATTENTION il va afficher les snow pcq dans DBconector la fonction openDBConnector se connect a la base snows et non shoes
+        //ATTENTION il va afficher les snow pcq dans DBconector la fonction openDBConnector se connect a la base snows et non shoes
 
 
-    $snowsQuery = 'SELECT code, brand, model, qtyAvailable, photo, active FROM shoes'; //change le snows en shoes et aussi dans dbConnector.php
+        $snowsQuery = 'SELECT code, brand, model, qtyAvailable, photo, active FROM shoes'; //change le snows en shoes et aussi dans dbConnector.php
 
-    require_once 'model/dbConnector.php';
+        require_once 'model/dbConnector.php';
 
-    return executeQuerySelect($snowsQuery);
+        return executeQuerySelect($snowsQuery);
 }
 
 

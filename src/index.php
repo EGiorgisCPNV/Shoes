@@ -3,8 +3,8 @@
  * @file      index.php
  * @brief     This file is the rooter managing the link with controllers.
  * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
+ * @author    Updated by Esteban:giorgis
+ * @version   14.05.202
  */
 
 session_start();

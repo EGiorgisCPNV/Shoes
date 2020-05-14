@@ -4,8 +4,8 @@
  * @file      users.php
  * @brief     This controller is designed to manage all users actions
  * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
+ * @author    Updated by Esteban:giorgis
+ * @version   14.05.202
 */
 
 

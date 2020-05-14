@@ -3,8 +3,8 @@
  * @file      articles.php
  * @brief     this controller is designed to manage articles actions
  * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
+ * @author    Updated by Esteban:giorgis
+ * @version   14.05.202
  */
 
 /**

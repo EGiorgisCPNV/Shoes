@@ -62,7 +62,7 @@ function openDBConnexion()
     $port = 50000;
     $charset = 'utf8';
     $dbName = 'shoes';//change le snows en shoes
-    $userName = 'root';
+    $userName = 'ShoesConnector';
     $userPwd = 'Pa$$w0rd';
     $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 

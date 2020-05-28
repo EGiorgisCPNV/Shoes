@@ -54,16 +54,23 @@ $rows = 0; // Column count
                     <div class="s_product_text">
                         <?php foreach ($tableSingleSnow as $result) : ?>
                             <h3><?= $result['model']; ?></h3>
-                            <h2><?= $result['price']; ?>$</h2>
+                            <h2><?= $result['price']; ?> CHF</h2>
                             <ul class="list">
                                 <li><a class="active" href="#"><span>Category</span> : Household</a></li>
                                 <li><a href="#"><span>Availibility</span> : In Stock</a></li>
                             </ul>
+
+
+                        <!--
                             <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are
                                 looking for
                                 something that can make your interior look awesome, and at the same time give you the
                                 pleasant warm feeling
                                 during the winter.</p>
+                         -->
+
+
+
                             <div class="product_count">
                                 <label for="qty">Quantity:</label>
                                 <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
@@ -100,22 +107,32 @@ $rows = 0; // Column count
                     <a class="nav-link" data-toggle="tab" href="#picture" role="tab" aria-controls="home"
                        aria-selected="true">Image</a>
                 </li>
+
+                <!--
                 <li class="nav-item">
                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                        aria-controls="contact"
                        aria-selected="false">Comments</a>
                 </li>
+               -->
+
+                <!--
                 <li class="nav-item">
                     <a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab"
                        aria-controls="review"
                        aria-selected="false">Reviews</a>
                 </li>
+                -->
+
+
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <?php foreach ($tableSingleSnow as $result) : ?>
                         <p><?= $result['description']; ?></p>
+                        <p>Code de l'artilce : <?= $result['code']; ?></p>
                     <?php endforeach ?>
+
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
@@ -188,7 +205,7 @@ $rows = 0; // Column count
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="picture" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane fade " id="picture" role="tabpanel" aria-labelledby="home-tab">
                     <?php foreach ($tableSingleSnow as $result) : ?>
                         <div class="single-prd-item">
                             <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
@@ -196,6 +213,7 @@ $rows = 0; // Column count
                     <?php endforeach ?>
                 </div>
 
+<!--
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="row">
                         <div class="col-lg-6">
@@ -290,6 +308,9 @@ $rows = 0; // Column count
                         </div>
                     </div>
                 </div>
+-->
+
+                <!--
                 <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
                     <div class="row">
                         <div class="col-lg-6">
@@ -442,6 +463,9 @@ $rows = 0; // Column count
                         </div>
                     </div>
                 </div>
+                -->
+
+
             </div>
         </div>
     </section>

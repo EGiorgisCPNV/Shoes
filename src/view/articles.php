@@ -30,6 +30,8 @@ $rows = 0; // Column count
     <!-- End Banner Area -->
     <div class="container">
         <div class="row">
+
+            <!--
             <div class="col-xl-3 col-lg-4 col-md-5">
                 <div class="sidebar-categories">
                     <div class="head">Browse Categories</div>
@@ -278,7 +280,13 @@ $rows = 0; // Column count
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-8 col-md-7">
+
+            -->
+
+
+
+
+            <div class="col-xl-12 col-lg-12 col-md-12">
                 <!-- Start Filter Bar -->
                 <div class="filter-bar d-flex flex-wrap align-items-center">
                     <div class="sorting">
@@ -318,7 +326,7 @@ $rows = 0; // Column count
                                     <h6>addidas New Hammer sole
                                         for Sports person</h6>
                                     <div class="price">
-                                        <h6><?= $result['price']; ?>$</h6>
+                                        <h6><?= $result['price']; ?> CHF</h6>
                                     </div>
                                     <div class="prd-bottom">
 

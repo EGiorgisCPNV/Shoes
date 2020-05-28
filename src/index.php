@@ -10,12 +10,14 @@
 session_start();
 require "controller/articles.php";
 require "controller/navigation.php";
+require "controller/cart.php";
 require "controller/users.php";
 
 
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
     switch ($action) {
+
         case 'displayArticles' :
             displayArticles();
             break;
@@ -32,6 +34,7 @@ if (isset($_GET['action'])) {
             login($_POST);
             break;
 
+
         case 'logout' :
             logout();
             break;
@@ -39,6 +42,20 @@ if (isset($_GET['action'])) {
         case 'register' :
             register($_POST);
             break;
+
+        case 'bag' :
+            bag();
+            break;
+
+
+        case 'checkout' :
+            checkout();
+            break;
+
+        case 'cartAddItem' :
+            cartAddItem($_POST);
+            break;
+
 
         default :
             lost();

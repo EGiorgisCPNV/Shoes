@@ -19,9 +19,9 @@ $rows = 0; // Column count
                 <div class="col-first">
                     <h1>Product Details Page</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="single-product.html">product-details</a>
+                        <a href="index.php?action=home">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="index.php?action=displayArticles">Articles<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="">Details de l'article</a>
                     </nav>
                 </div>
             </div>
@@ -61,32 +61,51 @@ $rows = 0; // Column count
                             </ul>
 
 
-                        <!--
-                            <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are
-                                looking for
-                                something that can make your interior look awesome, and at the same time give you the
-                                pleasant warm feeling
-                                during the winter.</p>
-                         -->
+                            <!--
+                                <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are
+                                    looking for
+                                    something that can make your interior look awesome, and at the same time give you the
+                                    pleasant warm feeling
+                                    during the winter.</p>
+                             -->
 
+
+
+
+
+
+
+                            <script>
+                                function f() {
+                                    var a = document.getElementById("sst").value;
+                                    return a;
+                                }
+                            </script>
 
 
                             <div class="product_count">
                                 <label for="qty">Quantity:</label>
                                 <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
                                        class="input-text qty">
+
                                 <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
                                         class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i>
                                 </button>
                                 <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
                                         class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i>
                                 </button>
+
                             </div>
                             <div class="card_area d-flex align-items-center">
-                                <a class="primary-btn" href="#">Add to Cart</a>
-                                <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
-                                <a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
+                                <a class="primary-btn"
+                                   href="index.php?action=cartAddItem&&code=<?= $result['code']; ?>&quantite=<?= $value = sst . value; ?>">Add
+                                    to Bag</a>
                             </div>
+
+
+
+
+
                         <?php endforeach ?>
                     </div>
                 </div>
@@ -213,102 +232,102 @@ $rows = 0; // Column count
                     <?php endforeach ?>
                 </div>
 
-<!--
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="comment_list">
-                                <div class="review_item">
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="img/product/review-1.png" alt="">
+                <!--
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="comment_list">
+                                                <div class="review_item">
+                                                    <div class="media">
+                                                        <div class="d-flex">
+                                                            <img src="img/product/review-1.png" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4>Blake Ruiz</h4>
+                                                            <h5>12th Feb, 2018 at 05:56 pm</h5>
+                                                            <a class="reply_btn" href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                        incididunt ut labore et
+                                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                        laboris nisi ut aliquip ex ea
+                                                        commodo</p>
+                                                </div>
+                                                <div class="review_item reply">
+                                                    <div class="media">
+                                                        <div class="d-flex">
+                                                            <img src="img/product/review-2.png" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4>Blake Ruiz</h4>
+                                                            <h5>12th Feb, 2018 at 05:56 pm</h5>
+                                                            <a class="reply_btn" href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                        incididunt ut labore et
+                                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                        laboris nisi ut aliquip ex ea
+                                                        commodo</p>
+                                                </div>
+                                                <div class="review_item">
+                                                    <div class="media">
+                                                        <div class="d-flex">
+                                                            <img src="img/product/review-3.png" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4>Blake Ruiz</h4>
+                                                            <h5>12th Feb, 2018 at 05:56 pm</h5>
+                                                            <a class="reply_btn" href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                        incididunt ut labore et
+                                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                        laboris nisi ut aliquip ex ea
+                                                        commodo</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4>Blake Ruiz</h4>
-                                            <h5>12th Feb, 2018 at 05:56 pm</h5>
-                                            <a class="reply_btn" href="#">Reply</a>
+                                        <div class="col-lg-6">
+                                            <div class="review_box">
+                                                <h4>Post a comment</h4>
+                                                <form class="row contact_form" action="contact_process.php" method="post"
+                                                      id="contactForm" novalidate="novalidate">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="name" name="name"
+                                                                   placeholder="Your Full name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" id="email" name="email"
+                                                                   placeholder="Email Address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="number" name="number"
+                                                                   placeholder="Phone Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" name="message" id="message" rows="1"
+                                                                      placeholder="Message"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-right">
+                                                        <button type="submit" value="submit" class="btn primary-btn">Submit Now</button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea
-                                        commodo</p>
                                 </div>
-                                <div class="review_item reply">
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="img/product/review-2.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4>Blake Ruiz</h4>
-                                            <h5>12th Feb, 2018 at 05:56 pm</h5>
-                                            <a class="reply_btn" href="#">Reply</a>
-                                        </div>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea
-                                        commodo</p>
-                                </div>
-                                <div class="review_item">
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="img/product/review-3.png" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4>Blake Ruiz</h4>
-                                            <h5>12th Feb, 2018 at 05:56 pm</h5>
-                                            <a class="reply_btn" href="#">Reply</a>
-                                        </div>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea
-                                        commodo</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="review_box">
-                                <h4>Post a comment</h4>
-                                <form class="row contact_form" action="contact_process.php" method="post"
-                                      id="contactForm" novalidate="novalidate">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="name" name="name"
-                                                   placeholder="Your Full name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="email" name="email"
-                                                   placeholder="Email Address">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="number" name="number"
-                                                   placeholder="Phone Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" id="message" rows="1"
-                                                      placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 text-right">
-                                        <button type="submit" value="submit" class="btn primary-btn">Submit Now</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
--->
+                -->
 
                 <!--
                 <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">

@@ -132,7 +132,7 @@ ob_start();
                                     </div>
                                 </div>
                             </td>
-                            <?php foreach ($asd as $result) : ?>
+                            <?php foreach (($_SESSION['cart']) as $result) : ?>
                             <td>
                                 <h5><?php $result[''] ?></h5>
                             </td>

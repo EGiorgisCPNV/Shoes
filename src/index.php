@@ -47,6 +47,9 @@ if (isset($_GET['action'])) {
             bag();
             break;
 
+        case 'updateCart':
+            updateCart($_POST);
+            break;
 
         case 'checkout' :
             checkout();

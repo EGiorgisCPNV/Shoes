@@ -122,65 +122,17 @@ ob_start();
                         <tbody>
 
                         <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img src="img/cart.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </td>
-                            <?php foreach (($_SESSION['cart']) as $result) : ?>
-                            <td>
-                                <h5><?php $result[''] ?></h5>
-                            </td>
-                            <td>
-                                <?php endforeach ?>
-
-                            </td>
-                            <td>
-                                <h5>$720.00</h5>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-                                <h5>Total</h5>
-                            </td>
-                            <td>
-                                <h5>$2160.00</h5>
-                            </td>
-                        </tr>
-
-                        </tbody>
-
-                        <tr class="out_button_area">
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-                                <div class="checkout_btn_inner d-flex align-items-center">
-                                    <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
-                                        shopping</a>
-                                    <a class="primary-btn" href="index.php?action=checkout">Finaliser la commande</a>
-                                </div>
-                            </td>
+                            <td><?php echo $_SESSION['brand']; ?> <?php echo $_SESSION['model']; ?></td>
+                            <td><h5><?php echo $_SESSION['price']; ?></h5></td>
+                            <td><?php echo $_SESSION['qtyItem']; ?></td>
+                            <td><?php echo $_SESSION['price']; ?></td>
                         </tr>
                     </table>
+                    <div class="checkout_btn_inner d-flex align-items-center">
+                        <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
+                            shopping</a>
+                        <a class="primary-btn" href="index.php?action=checkout">Finaliser la commande</a>
+                    </div>
                 </div>
             </div>
         </div>

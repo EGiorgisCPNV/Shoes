@@ -59,7 +59,7 @@ function openDBConnexion()
 
     $sqlDriver = 'mysql';
     $hostname = 'localhost';
-    $port = 50000;
+    $port = 3306;
     $charset = 'utf8';
     $dbName = 'shoes';//change le snows en shoes
     $userName = 'ShoesConnector';

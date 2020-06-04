@@ -6,6 +6,7 @@
  * Time: 12:31
  */
 
+require "model/cartManager.php";
 
 function cartAddItem($addItemRequest)
 {
@@ -27,6 +28,13 @@ function cartAddItem($addItemRequest)
 
 }
 
+function updateCart($purchase)
+{
+    if (cart($purchase)) {
+        $_SESSION['qtyItem'] = $purchase['qtyItem'];
+        bag();
+    }
+}
 
 
 

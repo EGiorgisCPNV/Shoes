@@ -98,11 +98,14 @@ class Cart
                 }
             }
         }
+
         if (!$updated) {
             //this is a new article to add
             require "articlesManager.php";
             $itemsAttributes = detailSingleSnow($cartItemToAdd->GetArticleId());
-            $cartItemToAdd->SetAttributes($itemsAttributes['description'], $itemsAttributes['photo'], $itemsAttributes['price']);
+
+            $cartItemToAdd->SetAttributes($itemsAttributes[0]['description'], $itemsAttributes[0]['photo'], $itemsAttributes[0]['price']);//tu peux aussi mettre [0] avant chaque truc sa marchera aussi pcq tu spécifie le tableau [0]
+
             $this->items[] = $cartItemToAdd;
 
         }

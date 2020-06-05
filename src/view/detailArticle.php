@@ -30,31 +30,35 @@ $rows = 0; // Column count
     <!-- End Banner Area -->
 
     <!--================Single Product Area =================-->
-    <form method="POST" action="index.php?action=updateCart&code=<?= $_GET['code']; ?>">
-        <div class="product_image_area">
-            <div class="container">
-                <div class="row s_product_inner">
-                    <div class="col-lg-6">
-                        <?php foreach ($tableSingleSnow as $result) : ?>
-                            <div class="s_Product_carousel">
+    <div class="product_image_area">
+        <div class="container">
+            <div class="row s_product_inner">
+                <div class="col-lg-6">
+                    <?php foreach ($tableSingleSnow as $result) : ?>
+                        <div class="s_Product_carousel">
 
-                                <div class="single-prd-item">
-                                    <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
-                                </div>
-
-                                <div class="single-prd-item">
-                                    <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
-                                </div>
-                                <div class="single-prd-item">
-                                    <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
-                                </div>
+                            <div class="single-prd-item">
+                                <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
                             </div>
-                        <?php endforeach ?>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="s_product_text">
-                            <?php foreach ($tableSingleSnow as $result) : ?>
-                                <h3><?= $result['model']; ?></h3>
+
+                            <div class="single-prd-item">
+                                <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
+                            </div>
+                            <div class="single-prd-item">
+                                <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="s_product_text">
+                        <?php foreach ($tableSingleSnow as $result) : ?>
+                            <h3><?= $result['model']; ?></h3>
+
+                            <form action="index.php?action=cartAddItem" method="post">
+
+                                <input name="code" value="<?= $result['code']; ?>" type="hidden">
+
                                 <h2><?= $result['price']; ?> CHF</h2>
                                 <ul class="list">
                                     <li><a class="active" href="#"><span>Category</span> : Household</a></li>
@@ -71,19 +75,10 @@ $rows = 0; // Column count
                                  -->
 
 
-                                <script>
-                                    function f() {
-                                        var a = document.getElementById("sst").value;
-                                        return a;
-                                    }
-                                </script>
-
-
                                 <div class="product_count">
                                     <label for="qty">Quantity:</label>
-                                    <input type="text" name="qtyItem" id="sst" maxlength="12" value="1"
-                                           title="Quantity:"
-                                           class="input-text qty">
+                                    <input type="text" name="quantite" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+
 
                                     <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
                                             class="increase items-count" type="button"><i
@@ -95,16 +90,19 @@ $rows = 0; // Column count
                                     </button>
 
                                 </div>
-                                <input type="submit" value="Add to bag" class="btn btn-secondary">
+                                <div class="card_area d-flex align-items-center">
+                                    <input class="primary-btn" type="submit" value="Add to Bag">
+                                </div>
+
+                            </form>
 
 
-                            <?php endforeach ?>
-                        </div>
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>
         </div>
-    </form>
+    </div>
     <!--================End Single Product Area =================-->
 
     <!--================Product Description Area =================-->

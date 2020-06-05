@@ -41,13 +41,7 @@ function singleArticles($code)
 }
 
 
-/**
- * @brief Cette fonction va rediriger sur la page panier
- */
-function bag()
-{
-    $asd=$_SESSION['cart'];
-    require "view/bag.php";
-}
+
+
 
 

@@ -109,30 +109,67 @@ ob_start();
         <div class="container">
             <div class="cart_inner">
                 <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">Produit</th>
-                            <th scope="col">Prix</th>
-                            <th scope="col">Quantité</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                        </thead>
+                    <?php if (!@$_SESSION['cart']) : ?>
+                        <h4>Le panier est vide</h4>
+                    <?php else : ?>
+                        <table class="table">
 
-                        <tbody>
+                            <thead>
+                            <tr>
+                                <th scope="col">Produit</th>
+                                <th scope="col">Prix</th>
+                                <th scope="col">Quantité</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                            </thead>
 
-                        <tr>
-                            <td><?php echo $_SESSION['brand']; ?> <?php echo $_SESSION['model']; ?></td>
-                            <td><h5><?php echo $_SESSION['price']; ?></h5></td>
-                            <td><?php echo $_SESSION['qtyItem']; ?></td>
-                            <td><?php echo $_SESSION['price']; ?></td>
-                        </tr>
-                    </table>
-                    <div class="checkout_btn_inner d-flex align-items-center">
-                        <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
-                            shopping</a>
-                        <a class="primary-btn" href="index.php?action=checkout">Finaliser la commande</a>
-                    </div>
+                            <?php foreach ($_SESSION['cart']->GetItems() as $itemsCart) : ?>
+                                <tbody>
+
+                                <tr>
+                                    <td>
+                                        <img src="<?= $itemsCart->GetImgPath() ?>" alt="">
+                                    </td>
+
+                                    <td>
+                                        <h5><?= $itemsCart->GetPrice() ?>.- CHF</h5>
+                                    </td>
+                                    <td>
+                                        <h5><?= $itemsCart->GetQuantity() ?></h5>
+                                    </td>
+                                    <td>
+                                        <h5><?= $itemsCart->GetTotalPrice() ?>.- CHF</h5>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            <?php endforeach ?>
+
+                            <tr class="out_button_area">
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+
+                                <td>
+                                    <h5></h5>
+                                </td>
+
+                                <td>
+                                    <div class="checkout_btn_inner d-flex align-items-center">
+                                        <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
+                                            shopping</a>
+                                        <a class="primary-btn" href="index.php?action=checkout">Finaliser la
+                                            commande (Cout total : <?= $_SESSION['cart']->GetTotalPrice() ?> CHF)</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    <?php endif ?>
                 </div>
             </div>
         </div>

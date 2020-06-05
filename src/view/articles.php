@@ -284,8 +284,6 @@ $rows = 0; // Column count
             -->
 
 
-
-
             <div class="col-xl-12 col-lg-12 col-md-12">
 
 
@@ -317,7 +315,7 @@ $rows = 0; // Column count
                  </div>
              </div>
                  -->
-             <!-- End Filter Bar -->
+                <!-- End Filter Bar -->
 
 
                 <!-- Start Best Seller -->
@@ -325,42 +323,32 @@ $rows = 0; // Column count
                     <div class="row">
                         <!-- single product -->
                         <?php foreach ($snowsResults as $result) : ?>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-product">
-                                    <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
-                                <div class="product-details">
-                                    <h6>addidas New Hammer sole
-                                        for Sports person</h6>
-                                    <div class="price">
-                                        <h6><?= $result['price']; ?> CHF</h6>
-                                    </div>
-                                    <div class="prd-bottom">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-product">
+                                    <form action="index.php?action=cartAddItem" method="post">
+                                        <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
 
-                                        <a href="index.php?action=cartAddItem&code=<?= $result['code']; ?>&quantite=1" class="social-info">
-                                            <span class="ti-bag"></span>
-                                            <p class="hover-text">Au panier</p>
-                                        </a>
+                                        <input name="code" value="<?= $result['code']; ?>" type="hidden">
+                                        <input name="quantite" value="1" type="hidden">
+                                        <div class="product-details">
+                                            <h6>addidas New Hammer sole
+                                                for Sports person</h6>
+                                            <div class="price">
+                                                <h6><?= $result['price']; ?> CHF</h6>
+                                            </div>
+                                            <div class="prd-bottom">
+                                                <a href="index.php?action=singleArticles&code=<?= $result['code']; ?>"
+                                                   class="social-info">
+                                                    <span class="lnr lnr-move"></span>
+                                                    <p class="hover-text">Details</p>
+                                                </a>
+                                            </div>
 
-                                        <!--
-                                        <a href="" class="social-info">
-                                            <span class="lnr lnr-heart"></span>
-                                            <p class="hover-text">Wishlist</p>
-                                        </a>
-                                        <a href="" class="social-info">
-                                            <span class="lnr lnr-sync"></span>
-                                            <p class="hover-text">compare</p>
-                                        </a>
-                                        -->
-
-                                        <a href="index.php?action=singleArticles&code=<?= $result['code']; ?>" class="social-info">
-                                            <span class="lnr lnr-move"></span>
-                                            <p class="hover-text">Details</p>
-                                        </a>
-                                    </div>
-
+                                        </div>
+                                        <input class="social-info" type="submit" value="Add to Bag">
+                                    </form>
                                 </div>
                             </div>
-                        </div>
                         <?php endforeach ?>
                     </div>
                 </section>
@@ -390,7 +378,6 @@ $rows = 0; // Column count
                 </div>
                 -->
                 <!-- End Filter Bar -->
-
 
 
             </div>

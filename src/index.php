@@ -16,7 +16,7 @@ require "controller/navigation.php";
 require "controller/ControllerCart.php";
 require "controller/users.php";
 
-
+//cette condition permet rediriger chaque action
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
     switch ($action) {

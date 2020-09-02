@@ -111,65 +111,94 @@ ob_start();
                 <div class="table-responsive">
                     <?php if (!@$_SESSION['cart']) : ?>
                         <h4>Le panier est vide</h4>
+                        <button href="index.php?action=displayArticles" class="btn btn-dark">Débuter les achats.
+                        </button>
                     <?php else : ?>
                         <table class="table">
 
                             <thead>
                             <tr>
                                 <th scope="col">Produit</th>
+                                <th scope="col">Description</th>
                                 <th scope="col">Prix</th>
                                 <th scope="col">Quantité</th>
                                 <th scope="col">Total</th>
                                 <th scope="col">Supprimer</th>
                             </tr>
                             </thead>
+                            <form action="index.php?action=cartAddItem" method="post">
 
-                            <?php foreach ($_SESSION['cart']->GetItems() as $itemsCart) : ?>
-                                <tbody>
+                                <?php foreach ($_SESSION['cart']->GetItems() as $itemsCart) : ?>
+                                    <tbody>
 
-                                <tr>
+                                    <tr>
+                                        <td>
+                                            <img src="<?= $itemsCart->GetImgPath() ?>" alt="">
+                                        </td>
+
+                                        <td>
+                                            <label style="font-size: 12px"><?= $itemsCart->GetDescription() ?></label>
+                                        </td>
+
+                                        <td>
+                                            <h5><?= $itemsCart->GetPrice() ?>.- CHF</h5>
+                                        </td>
+                                        <td>
+                                            <h5>
+                                                <div class="product_count">
+                                                    <input type="text" name="quantite" id="sst" maxlength="12"
+                                                           value="<?= $itemsCart->GetQuantity() ?>" title="Quantity:"
+                                                           class="input-text qty">
+
+
+                                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                            class="increase items-count" type="button"><i
+                                                                class="lnr lnr-chevron-up"></i>
+                                                    </button>
+                                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                            class="reduced items-count" type="button"><i
+                                                                class="lnr lnr-chevron-down"></i>
+                                                    </button>
+
+                                                </div>
+                                            </h5>
+                                        </td>
+                                        <td>
+                                            <h5><?= $itemsCart->GetTotalPrice() ?>.- CHF</h5>
+                                        </td>
+                                        <td>
+                                            <a class="cart" style="color: black;" href="#"><span
+                                                        class="ti-trash"></span></a>
+                                        </td>
+                                    </tr>
+
+
+                                    </tbody>
+                                <?php endforeach ?>
+
+                                <tr class="out_button_area">
                                     <td>
-                                        <img src="<?= $itemsCart->GetImgPath() ?>" alt="">
+
+                                    </td>
+                                    <td>
+
                                     </td>
 
                                     <td>
-                                        <h5><?= $itemsCart->GetPrice() ?>.- CHF</h5>
+                                        <h5></h5>
                                     </td>
+
                                     <td>
-                                        <h5><?= $itemsCart->GetQuantity() ?></h5>
+                                        <div class="checkout_btn_inner d-flex align-items-center">
+                                            <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
+                                                shopping</a>
+                                            <a class="primary-btn" href="index.php?action=checkout">Finaliser la
+                                                commande (Cout total : <?= $_SESSION['cart']->GetTotalPrice() ?>
+                                                CHF)</a>
+                                            <input class="primary-btn" type="submit" value="Add to Bag">
+                                        </div>
                                     </td>
-                                    <td>
-                                        <h5><?= $itemsCart->GetTotalPrice() ?>.- CHF</h5>
-                                    </td>
-                                    <td>
-                                        <a class="cart" style="color: black;" href="#"><span class="ti-trash"></span></a>
-                                    </td>
-                                </tr>
-
-
-                                </tbody>
-                            <?php endforeach ?>
-
-                            <tr class="out_button_area">
-                                <td>
-
-                                </td>
-                                <td>
-
-                                </td>
-
-                                <td>
-                                    <h5></h5>
-                                </td>
-
-                                <td>
-                                    <div class="checkout_btn_inner d-flex align-items-center">
-                                        <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
-                                            shopping</a>
-                                        <a class="primary-btn" href="index.php?action=checkout">Finaliser la
-                                            commande (Cout total : <?= $_SESSION['cart']->GetTotalPrice() ?> CHF)</a>
-                                    </div>
-                                </td>
+                            </form>
                             </tr>
 
                         </table>

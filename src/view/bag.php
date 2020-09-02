@@ -120,6 +120,7 @@ ob_start();
                                 <th scope="col">Prix</th>
                                 <th scope="col">Quantité</th>
                                 <th scope="col">Total</th>
+                                <th scope="col">Supprimer</th>
                             </tr>
                             </thead>
 
@@ -139,6 +140,9 @@ ob_start();
                                     </td>
                                     <td>
                                         <h5><?= $itemsCart->GetTotalPrice() ?>.- CHF</h5>
+                                    </td>
+                                    <td>
+                                        <a class="cart" style="color: black;" href="#"><span class="ti-trash"></span></a>
                                     </td>
                                 </tr>
 

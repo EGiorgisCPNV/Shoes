@@ -100,6 +100,7 @@ private $totalPrice;
     {
         return $this->totalPrice;
     }
+
     //endregion accessors and mutators
 
     //region public methods

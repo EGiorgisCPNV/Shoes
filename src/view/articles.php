@@ -339,13 +339,13 @@ $rows = 0; // Column count
                                             <div class="prd-bottom">
                                                 <a href="index.php?action=singleArticles&code=<?= $result['code']; ?>"
                                                    class="social-info">
-                                                    <span class="lnr lnr-move"></span>
+                                                    <button class="btn-sm btn btn-secondary" type="button">+</button>
                                                     <p class="hover-text">Details</p>
                                                 </a>
                                             </div>
 
                                         </div>
-                                        <input class="social-info" type="submit" value="Add to Bag">
+                                        <input class="btn btn-dark" type="submit" value="Add to Bag">
                                     </form>
                                 </div>
                             </div>

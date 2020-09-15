@@ -38,15 +38,15 @@ ob_start();
                     <div class="login_box_img">
                         <img class="img-fluid" src="view/img/login.jpg" alt="">
                         <div class="hover">
-                            <h4>New to our website?</h4>
-                            <p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-                            <a class="primary-btn" href="index.php?action=register">Crééer un compte</a>
+                            <h4>Pas de compte ?</h4>
+                            <p>Crééez un compte maintenant en cliquant</p>
+                            <a class="primary-btn" href="index.php?action=register">ICI</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="login_form_inner">
-                        <h3>Log in to enter</h3>
+                        <h3>Connectez-vous</h3>
                         <form class="row login_form" action="index.php?action=login" method="post" id="contactForm" novalidate="novalidate">
                             <div class="col-md-12 form-group">
                                 <input type="email" class="form-control" id="name" name="inputUserEmailAddress" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">

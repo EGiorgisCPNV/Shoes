@@ -39,9 +39,9 @@ ob_start();
                     <div class="login_box_img">
                         <img class="img-fluid" src="view/img/login.jpg" alt="">
                         <div class="hover">
-                            <h4>New to our website?</h4>
-                            <p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-                            <a class="primary-btn" href="index.php?action=login">Se connecté</a>
+                            <h4>Déjà un compte ?</h4>
+                            <p>Connectez-vous en cliquant</p>
+                            <a class="primary-btn" href="index.php?action=login">ICI</a>
                         </div>
                     </div>
                 </div>

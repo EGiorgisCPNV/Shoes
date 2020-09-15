@@ -64,7 +64,7 @@
                     <ul class="nav navbar-nav menu_nav ml-auto">
 
                         <!-- boutton accuiel-->
-                        <li class="<?php if ($_GET['action'] == 'home') : ?>active<?php endif; ?> nav-item " <?php if ((@$_GET['action'] == "home") || (!isset($_GET['action'])))  : //les double points sont obligatoire sa remplace un "{" dans les fichier html?>
+                        <li class="<?php if (@$_GET['action'] == 'home') : ?>active<?php endif; ?> nav-item " <?php if ((@$_GET['action'] == "home") || (!isset($_GET['action'])))  : //les double points sont obligatoire sa remplace un "{" dans les fichier html?>
                         <?php endif ?>>
                             <a class="nav-link" href="index.php?action=home">Accueil</a></li>
 
@@ -78,7 +78,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item">
                             <a href="index.php?action=bag" class="cart"><span
-                                    <?php if ($_GET['action'] == 'bag') : ?>style="color: orange" <?php endif; ?>  class="ti-bag"></span>
+                                    <?php if (@$_GET['action'] == 'bag') : ?>style="color: orange" <?php endif; ?>  class="ti-bag"></span>
                                 <label style="color: black"><?php if (isset($_SESSION['cart'])) : ?> <?= $_SESSION['cart']->GetNbOfArticles() ?><?php endif; ?></label>
                         </li>
                     </ul>

@@ -47,18 +47,12 @@ ob_start();
                 <div class="col-lg-6">
                     <div class="login_form_inner">
                         <h3>Connectez-vous</h3>
-                        <form class="row login_form" action="index.php?action=login" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="row login_form" action="index.php?action=login" method="post" id="contactForm">
                             <div class="col-md-12 form-group">
-                                <input type="email" class="form-control" id="name" name="inputUserEmailAddress" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                                <input type="email" class="form-control" id="email" name="inputUserEmailAddress" placeholder="Email" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="password" class="form-control" id="name" name="inputUserPsw" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <div class="creat_account">
-                                    <input type="checkbox" id="f-option2" name="selector">
-                                    <label for="f-option2">Keep me logged in</label>
-                                </div>
+                                <input type="password" class="form-control" id="psw" name="inputUserPsw" placeholder="Password" required>
                             </div>
                             <div class="col-md-12 form-group">
                                 <button type="submit" value="submit" class="primary-btn">Log In</button>

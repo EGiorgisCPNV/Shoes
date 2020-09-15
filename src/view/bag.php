@@ -110,9 +110,8 @@ ob_start();
             <div class="cart_inner">
                 <div class="table-responsive">
                     <?php if (!@$_SESSION['cart']) : ?>
-                        <h4>Le panier est vide</h4>
-                        <button href="index.php?action=displayArticles" class="btn btn-dark">Débuter les achats.
-                        </button>
+                        <h2>Panier vide !</h2>
+                        <a href="index.php?action=displayArticles"><button class="btn btn-dark">Voir articles</button></a>
                     <?php else : ?>
                         <table class="table">
 

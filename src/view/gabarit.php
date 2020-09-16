@@ -88,7 +88,7 @@
                         <li class="nav-item <?php if (@$_GET['action'] == 'login') : ?>active<?php endif; ?>"><a
                                     class="nav-link" href="index.php?action=login">Login</a></li>
                         <li class="nav-item <?php if (@$_GET['action'] == 'register') : ?>active<?php endif; ?>"><a
-                                    class="nav-link" href="index.php?action=register">S'inscrire</a></li>
+                                    class="nav-link" href="index.php?action=register">Register</a></li>
                     <?php else : ?>
                         <!-- Display the button useful for logout-->
                         <li class="nav-item <?php if (@$_GET['action'] == 'logout') : ?>active<?php endif; ?>"><a

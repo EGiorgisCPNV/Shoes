@@ -40,14 +40,17 @@ ob_start();
                         <img class="img-fluid" src="view/img/login.jpg" alt="">
                         <div class="hover">
                             <h4>Déjà un compte ?</h4>
-                            <p>Connectez-vous en cliquant</p>
-                            <a class="primary-btn" href="index.php?action=login">ICI</a>
+                            <p>Connectez-vous maintenant</p>
+                            <a class="primary-btn" href="index.php?action=login">Login</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="login_form_inner">
-                        <h3>Log in to enter</h3>
+                        <h3>Créez un compte !</h3>
+                        <?php if(isset($registerErrorMessage)) : ?>
+                            <h5><span style="color:red"><?= $registerErrorMessage; ?></span></h5><br>
+                        <?php endif ?>
                         <form class="row login_form" action="index.php?action=register" method="post" id="contactForm">
                             <div class="col-md-12 form-group">
                                 <input type="email" class="form-control" id="name" name="inputUserEmailAddress" placeholder="Email" required>
@@ -59,8 +62,7 @@ ob_start();
                                 <input type="password" class="form-control" id="name" name="inputUserPswRepeat" placeholder="Confirmez votre mot de passe" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <button type="submit" value="submit" class="primary-btn">S'inscrire</button>
-                                <a href="#">Forgot Password?</a>
+                                <button type="submit" value="submit" class="primary-btn">Register</button>
                             </div>
                         </form>
                     </div>

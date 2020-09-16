@@ -11,9 +11,6 @@ $title = 'Rent A Snow - Login/Logout';
 
 ob_start();
 ?>
-<?php if(isset($loginErrorMessage)) : ?>
-    <h5><span style="color:red"><?= $loginErrorMessage; ?></span></h5>
-<?php endif ?>
     <!-- Start Banner Area -->
     <section class="banner-area organic-breadcrumb">
         <div class="container">
@@ -39,14 +36,17 @@ ob_start();
                         <img class="img-fluid" src="view/img/login.jpg" alt="">
                         <div class="hover">
                             <h4>Pas de compte ?</h4>
-                            <p>Crééez un compte maintenant en cliquant</p>
-                            <a class="primary-btn" href="index.php?action=register">ICI</a>
+                            <p>Crééez un compte maintenant</p>
+                            <a class="primary-btn" href="index.php?action=register">Register</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="login_form_inner">
                         <h3>Connectez-vous</h3>
+                        <?php if(isset($loginErrorMessage)) : ?>
+                            <h5><span style="color:red"><?= $loginErrorMessage; ?></span></h5><br>
+                        <?php endif ?>
                         <form class="row login_form" action="index.php?action=login" method="post" id="contactForm">
                             <div class="col-md-12 form-group">
                                 <input type="email" class="form-control" id="email" name="inputUserEmailAddress" placeholder="Email" required>
@@ -55,8 +55,7 @@ ob_start();
                                 <input type="password" class="form-control" id="psw" name="inputUserPsw" placeholder="Password" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <button type="submit" value="submit" class="primary-btn">Log In</button>
-                                <a href="#">Forgot Password?</a>
+                                <button type="submit" value="submit" class="primary-btn">Login</button>
                             </div>
                         </form>
                     </div>

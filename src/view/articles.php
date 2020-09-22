@@ -326,7 +326,11 @@ $rows = 0; // Column count
                             <div class="col-lg-4 col-md-6">
                                 <div class="single-product">
                                     <form action="index.php?action=cartAddItem" method="post">
-                                        <img src="<?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
+                                        <?php if($result['photo']) : ?>
+                                            <img src=" <?= $result['photo']; ?>" alt="<?= $result['code']; ?>">
+                                        <?php else : ?>
+                                            <img src="view/img/noimage.jpg" alt="">
+                                        <?php endif ?>
 
                                         <input name="code" value="<?= $result['code']; ?>" type="hidden">
                                         <input name="quantite" value="1" type="hidden">
@@ -339,7 +343,8 @@ $rows = 0; // Column count
                                             <div class="prd-bottom">
                                                 <a href="index.php?action=singleArticles&code=<?= $result['code']; ?>"
                                                    class="social-info">
-                                                    <button class="btn-sm btn btn-secondary" type="button">+</button>
+                                                    <button class="btn-sm btn btn-secondary" type="button">+
+                                                    </button>
                                                     <p class="hover-text">Details</p>
                                                 </a>
                                             </div>
@@ -350,6 +355,7 @@ $rows = 0; // Column count
                                 </div>
                             </div>
                         <?php endforeach ?>
+
                     </div>
                 </section>
                 <!-- End Best Seller -->

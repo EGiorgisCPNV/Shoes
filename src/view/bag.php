@@ -189,12 +189,9 @@ ob_start();
 
                                     <td>
                                         <div class="checkout_btn_inner d-flex align-items-center">
-                                            <a class="gray_btn" href="index.php?action=displayArticles">Continuer le
-                                                shopping</a>
-                                            <a class="primary-btn" href="index.php?action=checkout">Finaliser la
-                                                commande (Cout total : <?= $_SESSION['cart']->GetTotalPrice() ?>
-                                                CHF)</a>
-                                            <input class="primary-btn" type="submit" value="Add to Bag">
+                                            <input style="border-color: black; border-right-width: 0cm" class="primary-btn" href="index.php?action=displayArticles" type="button" value="Continuer le shoping">
+                                            <input style="border-color: black;border-right-width: 0cm" class="primary-btn" href="index.php?action=checkout" type="button" value="Finaliser la commande (cout : <?= $_SESSION['cart']->GetTotalPrice() ?> CHF)">
+                                            <input style="border-color: black" class="primary-btn" type="submit" value="Add to Bag">
                                         </div>
                                     </td>
                             </form>

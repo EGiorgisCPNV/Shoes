@@ -1224,7 +1224,7 @@ h1, h2, h3, h4, h5, h6 {
         right: 0px; } }
     @media (max-width: 991px) {
       .banner-area .active-banner-slider .owl-nav {
-        display: none; } }
+       } }
     .banner-area .active-banner-slider .owl-nav .owl-prev,
     .banner-area .active-banner-slider .owl-nav .owl-next {
       display: inline-block;
@@ -1237,6 +1237,7 @@ h1, h2, h3, h4, h5, h6 {
       .banner-area .active-banner-slider .owl-nav .owl-prev:hover,
       .banner-area .active-banner-slider .owl-nav .owl-next:hover {
         opacity: 1; }
+
   .banner-area .banner-content {
     padding-left: 10px; }
     @media (max-width: 991px) {

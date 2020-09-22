@@ -18,7 +18,7 @@ $title = "Rent A Snow - Home";
                 <div class="col-lg-12">
                     <div class="active-banner-slider owl-carousel">
                         <!-- single-slide -->
-                        <div class="row single-slide align-items-center d-flex">
+                        <div class="row align-items-center ">
                             <div class="col-lg-5 col-md-6">
                                 <div class="banner-content">
                                     <h1>Nike New <br>Collection!</h1>

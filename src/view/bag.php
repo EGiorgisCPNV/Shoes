@@ -147,10 +147,10 @@ ob_start();
                                                 <div class="product_count">
                                                     <input type="text" name="quantite" id="sst" maxlength="12"
                                                            value="<?= $itemsCart->GetQuantity() ?>" title="Quantity:"
-                                                           class="input-text qty">
+                                                           class="input-text qty" disabled>
 
 
-                                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
                                                             class="increase items-count" type="button"><i
                                                                 class="lnr lnr-chevron-up"></i>
                                                     </button>
@@ -158,6 +158,7 @@ ob_start();
                                                             class="reduced items-count" type="button"><i
                                                                 class="lnr lnr-chevron-down"></i>
                                                     </button>
+                                                    -->
 
                                                 </div>
                                             </h5>
@@ -183,16 +184,14 @@ ob_start();
 
                                     </td>
 
-                                    <td>
-                                        <h5></h5>
-                                    </td>
 
                                     <td>
-                                        <div class="checkout_btn_inner d-flex align-items-center">
-                                            <input style="border-color: black; border-right-width: 0cm" class="primary-btn" href="index.php?action=displayArticles" type="button" value="Continuer le shoping">
-                                            <input style="border-color: black;border-right-width: 0cm" class="primary-btn" href="index.php?action=checkout" type="button" value="Finaliser la commande (cout : <?= $_SESSION['cart']->GetTotalPrice() ?> CHF)">
-                                            <input style="border-color: black" class="primary-btn" type="submit" value="Add to Bag">
+                                        <div  class="checkout_btn_inner text-center">
+                                            <a class="primary-btn" href="index.php?action=displayArticles">Continuer le shoping</a>
+                                             <a class="primary-btn" href="index.php?action=checkout">Finaliser la commande (cout : <?= $_SESSION['cart']->GetTotalPrice() ?> CHF)</a>
+                                            <!-- <input style="border-color: black" class="primary-btn" type="submit" value="Add to Bag"> -->
                                         </div>
+
                                     </td>
                             </form>
                             </tr>

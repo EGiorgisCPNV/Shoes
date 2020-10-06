@@ -25,6 +25,8 @@ ob_start();
     </section>
     <!-- End Banner Area -->
 
+
+
     <!--================Cart Area =================-->
     <section class="cart_area">
         <div class="container">
@@ -38,18 +40,19 @@ ob_start();
                     <?php else : ?>
                         <table class="table">
                             <thead>
-                                <tr>
-                                    <th scope="col">Produit</th>
-                                    <th scope="col">Prix</th>
-                                    <th scope="col">Quantité</th>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">Retirer</th>
-                                </tr>
+                            <tr>
+                                <th scope="col">Produit</th>
+                                <th scope="col">Prix</th>
+                                <th scope="col">Quantité</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Retirer</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <form action="index.php?action=cartAddItem" method="post">
-                                    <?php foreach ($_SESSION['cart']->GetItems() as $itemsCart) : ?>
-                                        <tr class="text-center">
+                            <form action="index.php?action=cartAddItem" method="post">
+                                <?php foreach ($_SESSION['cart']->GetItems() as $itemsCart) : ?>
+                                    <tr class="text-center">
+                                        <div id="div1">
                                             <td>
                                                 <div class="media">
                                                     <div class="d-flex">
@@ -65,61 +68,67 @@ ob_start();
                                             </td>
                                             <td>
                                                 <div class="product_count">
-                                                    <input type="text" name="qty" id="sst" maxlength="12" value="<?= $itemsCart->GetQuantity() ?>" title="Quantity:"
+                                                    <input type="text" name="qty" id="sst" maxlength="12"
+                                                           value="<?= $itemsCart->GetQuantity() ?>" title="Quantity:"
                                                            class="input-text qty">
                                                     <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                                            class="increase items-count" type="button"><i
+                                                                class="lnr lnr-chevron-up"></i></button>
                                                     <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                                            class="reduced items-count" type="button"><i
+                                                                class="lnr lnr-chevron-down"></i></button>
                                                 </div>
                                             </td>
                                             <td>
-                                                <h5><?= $itemsCart->GetTotalPrice() ?>CHF</h5>
+                                                <h5><?= $itemsCart->GetPrice() * $itemsCart->GetQuantity() ?>CHF</h5>
                                             </td>
                                             <td>
                                                 <a class="cart" style="color: black;" href="#"><span
                                                             class="ti-trash"></span></a>
                                             </td>
-                                        </tr>
-                                    <?php endforeach ?>
-                                    <tr class="text-center">
-                                        <td>
-
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                        <td>
-                                            <b><h5>Total:</h5></b>
-                                        </td>
-                                        <td>
-                                            <h5><?= $_SESSION['cart']->GetTotalPrice() ?>CHF</h5>
-                                        </td>
+                                        </div>
                                     </tr>
-                                    <tr class="out_button_area">
-                                        <td>
+                                <?php endforeach ?>
+                                <tr class="text-center">
+                                    <td>
 
-                                        </td>
-                                        <td>
+                                    </td>
+                                    <td>
 
-                                        </td>
-                                        <td>
+                                    </td>
+                                    <td>
 
-                                        </td>
-                                        <td>
+                                    </td>
+                                    <td>
+                                        <b><h5>Total:</h5></b>
+                                    </td>
+                                    <td>
+                                        <h5><?= $_SESSION['cart']->GetTotalPrice() ?>CHF</h5>
+                                    </td>
+                                </tr>
+                                <tr class="out_button_area">
+                                    <td>
 
-                                        </td>
-                                        <td>
-                                            <div class="checkout_btn_inner d-flex align-items-center" st>
-                                                <a class="gray_btn" href="index.php?action=displayArticles">Continuer Shopping</a>
-                                                <a class="primary-btn" href="index.php?action=checkout">Finaliser l'achat</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </form>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div class="checkout_btn_inner d-flex align-items-center" st>
+                                            <a class="gray_btn" href="index.php?action=displayArticles">Continuer
+                                                Shopping</a>
+                                            <a class="primary-btn" href="index.php?action=checkout">Finaliser
+                                                l'achat</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </form>
                             </tbody>
                         </table>
                     <?php endif ?>
@@ -127,8 +136,6 @@ ob_start();
             </div>
         </div>
     </section>
-
-
 <?php
 $content = ob_get_clean();
 require 'gabarit.php';

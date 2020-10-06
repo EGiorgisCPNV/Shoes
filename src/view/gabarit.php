@@ -16,7 +16,10 @@
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Karma Shop</title>
+    <!-- Cart JS -->
+    <link rel="script" href="view/js/cart.js">
     <!--
+
         CSS
         ============================================= -->
     <link rel="stylesheet" href="view/cssNewTemplate/linearicons.css">
@@ -30,7 +33,6 @@
     <link rel="stylesheet" href="view/cssNewTemplate/ion.rangeSlider.skinFlat.css">
     <link rel="stylesheet" href="view/cssNewTemplate/magnific-popup.css">
     <link rel="stylesheet" href="view/cssNewTemplate/main.css">
-
 </head>
 
 <body>

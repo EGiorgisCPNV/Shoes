@@ -9,6 +9,12 @@
 require_once "Cart.php";
 require_once "CartItem.php";
 
+/**
+ * @param $cart
+ * @param $articleId
+ * @param $quantity
+ * @return Cart
+ */
 function updateCart($cart,$articleId, $quantity){
     $cartItem = new CartItem($articleId,$quantity);//le fait de créer un objet corespondant a l'article
 

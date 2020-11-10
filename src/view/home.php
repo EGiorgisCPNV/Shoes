@@ -22,8 +22,7 @@ $title = "Rent A Snow - Home";
                             <div class="col-lg-5 col-md-6">
                                 <div class="banner-content">
                                     <h1>Nike New <br>Collection!</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                    <p>The new shoes in trend right now, with the new design by jordan.</p>
                                     <div class="add-bag d-flex align-items-center">
                                         <a class="add-btn" href="index.php?action=displayArticles"><span class="lnr lnr-cross"></span></a>
                                         <span class="add-text text-uppercase">Voir plus</span>
@@ -40,9 +39,8 @@ $title = "Rent A Snow - Home";
                         <div class="row single-slide">
                             <div class="col-lg-5">
                                 <div class="banner-content">
-                                    <h1>Nike New <br>Collection!</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                    <h1>Converse New <br>Collection!</h1>
+                                    <p>And this beautiful shoes in collaboration with Adidas.</p>
                                     <div class="add-bag d-flex align-items-center">
                                         <a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
                                         <span class="add-text text-uppercase">Add to Bag</span>
@@ -188,9 +186,6 @@ $title = "Rent A Snow - Home";
                     <div class="col-lg-6 text-center">
                         <div class="section-title">
                             <h1>Latest Products</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore
-                                magna aliqua.</p>
                         </div>
                     </div>
                 </div>
@@ -203,8 +198,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -236,8 +231,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -269,8 +264,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
                                     <a href="" class="social-info">
@@ -301,8 +296,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -334,8 +329,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -367,8 +362,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -400,8 +395,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -433,8 +428,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -468,9 +463,6 @@ $title = "Rent A Snow - Home";
                     <div class="col-lg-6 text-center">
                         <div class="section-title">
                             <h1>Coming Products</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore
-                                magna aliqua.</p>
                         </div>
                     </div>
                 </div>
@@ -483,8 +475,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -516,8 +508,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -549,8 +541,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -582,8 +574,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -615,8 +607,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -648,8 +640,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -681,8 +673,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -714,8 +706,8 @@ $title = "Rent A Snow - Home";
                                 <h6>addidas New Hammer sole
                                     for Sports person</h6>
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <div class="prd-bottom">
 
@@ -785,8 +777,8 @@ $title = "Rent A Snow - Home";
                             <img class="img-fluid" src="view/img/product/e-p1.png" alt="">
                             <div class="product-details">
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <h4>addidas New Hammer sole
                                     for Sports person</h4>
@@ -801,8 +793,8 @@ $title = "Rent A Snow - Home";
                             <img class="img-fluid" src="view/img/product/e-p1.png" alt="">
                             <div class="product-details">
                                 <div class="price">
-                                    <h6>$150.00</h6>
-                                    <h6 class="l-through">$210.00</h6>
+                                    <h6>150.00 CHF</h6>
+                                    <h6 class="l-through">210.00 CHF</h6>
                                 </div>
                                 <h4>addidas New Hammer sole
                                     for Sports person</h4>
@@ -842,143 +834,6 @@ $title = "Rent A Snow - Home";
         </div>
     </section>
     <!-- End brand Area -->
-
-    <!-- Start related-product Area -->
-    <section class="related-product-area section_gap_bottom">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <div class="section-title">
-                        <h1>Deals of the Week</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r1.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r2.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r3.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r5.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r6.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r7.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r9.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r10.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="single-related-product d-flex">
-                                <a href="#"><img src="view/img/r11.jpg" alt=""></a>
-                                <div class="desc">
-                                    <a href="#" class="title">Black lace Heels</a>
-                                    <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="ctg-right">
-                        <a href="#" target="_blank">
-                            <img class="img-fluid d-block mx-auto" src="view/img/category/c5.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End related-product Area -->
 
 <?php
 $content = ob_get_clean();

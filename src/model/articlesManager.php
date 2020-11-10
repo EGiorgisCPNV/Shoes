@@ -43,6 +43,11 @@ function getArticles()
 
 
 //cette fonction va afficher un snow precis avec ces détails la différence entre la fonction codeVerification() c'est dans cette fonction il affiche tout les par rapport au code contrairement a codeVerification() qui affiche que les codes
+/**
+ * @param $code
+ * @return array|null
+ * @throws ModelDataBaseException
+ */
 function detailSingleSnow($code)
 {
 

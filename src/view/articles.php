@@ -81,9 +81,7 @@ $rows = 0; // Column count
                 <div class="col-lg-6 text-center">
                     <div class="section-title">
                         <h1>Deals of the Week</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.</p>
+                        <p>Go check fast.</p>
                     </div>
                 </div>
             </div>
@@ -96,8 +94,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -108,8 +106,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -120,8 +118,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -132,8 +130,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -144,8 +142,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -156,8 +154,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -168,8 +166,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -180,8 +178,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>
@@ -192,8 +190,8 @@ $rows = 0; // Column count
                                 <div class="desc">
                                     <a href="#" class="title">Black lace Heels</a>
                                     <div class="price">
-                                        <h6>$189.00</h6>
-                                        <h6 class="l-through">$210.00</h6>
+                                        <h6>189.00 CHF</h6>
+                                        <h6 class="l-through">210.00 CHF</h6>
                                     </div>
                                 </div>
                             </div>

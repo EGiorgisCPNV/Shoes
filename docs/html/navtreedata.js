@@ -24,16 +24,20 @@
 */
 var NAVTREE =
 [
-  [ "shoesDoc", "index.html", [
-    [ "2.0 BOOTSTRAP JS PHILOSOPHY", "md_view_content_documentation_assets_js__r_e_a_d_m_e.html", null ],
-    [ "README", "md_view_content_scripts_fontawesome__r_e_a_d_m_e.html", null ],
-    [ "Vegas Background jQuery Plugin", "md_view_content_scripts_vegas__r_e_a_d_m_e.html", null ],
-    [ "README", "md_view_content_site_scripts_fontawesome__r_e_a_d_m_e.html", null ],
-    [ "Vegas Background jQuery Plugin", "md_view_content_site_scripts_vegas__r_e_a_d_m_e.html", null ],
+  [ "Shoes", "index.html", [
+    [ "2.0 BOOTSTRAP JS PHILOSOPHY", "md_src_view_content_documentation_assets_js__r_e_a_d_m_e.html", null ],
+    [ "README", "md_src_view_content_scripts_fontawesome__r_e_a_d_m_e.html", null ],
+    [ "Vegas Background jQuery Plugin", "md_src_view_content_scripts_vegas__r_e_a_d_m_e.html", null ],
+    [ "README", "md_src_view_content_site_scripts_fontawesome__r_e_a_d_m_e.html", null ],
+    [ "Vegas Background jQuery Plugin", "md_src_view_content_site_scripts_vegas__r_e_a_d_m_e.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -48,7 +52,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_cart_8php.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

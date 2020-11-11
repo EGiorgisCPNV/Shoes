@@ -1,4 +1,4 @@
 var gabarit_8php =
 [
-    [ "((@ $_GET['action']==\"displayArticles\"))", "gabarit_8php.html#a726af9f8542a685f0b29640fa2d9e0b5", null ]
+    [ "else", "gabarit_8php.html#ae5b2f994a8b40c8037e2a09dc4786e85", null ]
 ];
